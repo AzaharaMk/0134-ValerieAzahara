@@ -1,0 +1,75 @@
+Project documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-8-oracle/bin/javadoc
+-sourcepath
+/home/valerie/Documentos/puertoVal
+-source
+1.8
+-classpath
+/usr/share/bluej/bluejcore.jar:/usr/share/bluej/junit-4.8.2.jar:/home/valerie/Escritorio/DAM/Programacion/78bba85edb6dbb89fb59:/usr/share/bluej/userlib/pi4j-device.jar:/usr/share/bluej/userlib/pi4j-service.jar:/usr/share/bluej/userlib/pi4j-core.jar:/usr/share/bluej/userlib/pi4j-gpio-extension.jar:/home/valerie/Documentos/puertoVal
+-d
+/home/valerie/Documentos/puertoVal/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/usr/share/bluej/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+-doctitle
+puertoVal
+-windowtitle
+puertoVal
+-author
+-version
+-nodeprecated
+-package
+-link
+http://download.oracle.com/javase/8/docs/api/
+/home/valerie/Documentos/puertoVal/Puerto.java
+/home/valerie/Documentos/puertoVal/Alquiler.java
+<---- end of javadoc command ---->
+Loading source file /home/valerie/Documentos/puertoVal/Puerto.java...
+Loading source file /home/valerie/Documentos/puertoVal/Alquiler.java...
+Constructing Javadoc information...
+/home/valerie/Documentos/puertoVal/Puerto.java:12: error: cannot find symbol
+    private Barco barco;
+            ^
+  symbol:   class Barco
+  location: class Puerto
+/home/valerie/Documentos/puertoVal/Puerto.java:29: error: cannot find symbol
+    public float alquilarAmarre(int numDias, Barco barco){
+                                             ^
+  symbol:   class Barco
+  location: class Puerto
+/home/valerie/Documentos/puertoVal/Alquiler.java:13: error: cannot find symbol
+    private Barco barco;
+            ^
+  symbol:   class Barco
+  location: class Alquiler
+/home/valerie/Documentos/puertoVal/Alquiler.java:23: error: cannot find symbol
+    public Alquiler( int numeroDias, int posicionAmarre, Barco barco)
+                                                         ^
+  symbol:   class Barco
+  location: class Alquiler
+Standard Doclet version 1.8.0_111
+Building tree for all the packages and classes...
+Generating /home/valerie/Documentos/puertoVal/doc/Alquiler.html...
+/home/valerie/Documentos/puertoVal/Alquiler.java:23: warning - @param argument "parametro" is not a parameter name.
+Generating /home/valerie/Documentos/puertoVal/doc/Puerto.html...
+/home/valerie/Documentos/puertoVal/Puerto.java:8: warning - @2.0 is an unknown tag.
+Generating /home/valerie/Documentos/puertoVal/doc/package-frame.html...
+Generating /home/valerie/Documentos/puertoVal/doc/package-summary.html...
+Generating /home/valerie/Documentos/puertoVal/doc/package-tree.html...
+Generating /home/valerie/Documentos/puertoVal/doc/constant-values.html...
+Building index for all the packages and classes...
+Generating /home/valerie/Documentos/puertoVal/doc/overview-tree.html...
+Generating /home/valerie/Documentos/puertoVal/doc/index-all.html...
+Building index for all classes...
+Generating /home/valerie/Documentos/puertoVal/doc/allclasses-frame.html...
+Generating /home/valerie/Documentos/puertoVal/doc/allclasses-noframe.html...
+Generating /home/valerie/Documentos/puertoVal/doc/index.html...
+Generating /home/valerie/Documentos/puertoVal/doc/help-doc.html...
+Generating /home/valerie/Documentos/puertoVal/doc/stylesheet.css...
+6 warnings

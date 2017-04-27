@@ -2,8 +2,8 @@
 /**
  * Write a description of class Alquiler here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Valerie Santos
+ * @version 2.0
  */
 public class Alquiler 
 {
@@ -16,6 +16,9 @@ public class Alquiler
 
     /**
      * Constructor for objects of class Alquiler
+     * @param numeroDias nos dan el numero de dias que se desea alquilar el amarre
+     * @param posicionAmarre la posicion en que se va alquilar el barco
+     * @param parametro de tipo Barco 
      */
     public Alquiler( int numeroDias, int posicionAmarre, Barco barco)
     {
@@ -25,8 +28,10 @@ public class Alquiler
         this.barco = barco;
     }
 
+    
     /**
      * Metodo que permite obtener  el precio del alquiler
+     * @return el precio del alquiler del barco
      */
     public float getPrecioAlquiler()
     {
@@ -38,10 +43,13 @@ public class Alquiler
           return precioAlquiler;
     }
     
-    
+    /**
+     * Metodo que devuelve una cadena de String con los datos del alquiler
+     * @return datos asociados a la clase Alquiler
+     */
     public String toString(){
         String cadenaADevolver = "";
-        cadenaADevolver += "Numero de dias: "+ numeroDias + " Posicion: " +  posicionAmarre + " " + barco.toString()  + "\n";
+        cadenaADevolver += "-Numero de dias: "+ numeroDias + "\n" + "-Posicion amarre: " +  posicionAmarre + "\n " + barco.toString()  + "\n";
 
         
         return cadenaADevolver;    

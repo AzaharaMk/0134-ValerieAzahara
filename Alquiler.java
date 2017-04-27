@@ -33,7 +33,7 @@ public class Alquiler
         float precioAlquiler;
         
         precioAlquiler = (float)(numeroDias * (VALOR_MULTIPLICADOR_ESLORA * barco.getEslora())
-          + (VALOR_MULTIPLICADOR_BERNUE * barco.getCoeficienteBernue()));
+          + (VALOR_MULTIPLICADOR_BERNUE * barco.getCoeficienteBernua()));
         
           return precioAlquiler;
     }
@@ -41,7 +41,7 @@ public class Alquiler
     
     public String toString(){
         String cadenaADevolver = "";
-        cadenaADevolver += "Numero de dias: "+ numeroDias + " Posicion: " +  posicionAmarre + " " + barco.toString()  + "\n";
+        cadenaADevolver += "Numero de dias: "+ numeroDias +"\nPosicion: " +  posicionAmarre + " " + barco.toString()  + "\n";
 
         
         return cadenaADevolver;    

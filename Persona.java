@@ -1,24 +1,24 @@
 
-/**
- * Write a description of class Persona here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Persona
 {
     private String nombre;
     private String dni;
 
     /**
-     * Constructor for objects of class Persona
+     * Constructor de la clase Persona.
+     * @param nombre sring que ingresa el nombre de la persona.
+     * @param dni string que guarda el dni de la persona.
      */
     public Persona(String nombre, String dni)
     {
         this.nombre = nombre;
         this.dni = dni;
     }
-
+    
+    /**
+     * Devuelve toda la información relacionada con la Persona.
+     * @return información de la persona.
+     */
     public String toString()
     {
         String cadenaADevoler = "";

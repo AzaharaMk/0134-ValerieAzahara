@@ -7,7 +7,11 @@ public abstract class Barco
     private Persona propietario;
 
     /**
-     * Constructor for objects of class Barco
+     * Constructor de la clase Barco
+     * @param matricula cadena de caracteres referente a la matricula del barco.
+     * @param eslora parametro de tipo double mediante el cual se especifica el tamaño de la eslora.
+     * @param anoFabricacion entero por el cual se ingresa el año de fabricación del barco.
+     * @param propietario onbejo de tipo persona que especifica los datos del propietario del barco.
      */
     public Barco(String matricula, double eslora,int anoFabricacion,Persona propietario)
     {
@@ -17,6 +21,10 @@ public abstract class Barco
         this.propietario = propietario;
     }
 
+    /**
+     * Devuelve información relacionada con el Barco.
+     * @return información referente al barco.
+     */
     public String toString()
     {
         String cadenaADevolver = "";
@@ -25,10 +33,17 @@ public abstract class Barco
         return cadenaADevolver;
     }
     
+    /**
+     * Devuelve el tamaño de la eslora.
+     * @return tamaño de eslora.
+     */
     public double getEslora()
     {
         return eslora;
     }
     
+    /**
+     * Método abstracto que devuelve el coeficiente de Bernua
+     */
     public abstract int getCoeficienteBernua();
 }

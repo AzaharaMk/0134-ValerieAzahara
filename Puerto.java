@@ -62,9 +62,8 @@ public class Puerto
             }
 
             else{
-                
-                System.out.println("¡El amarre " +  i + " no está disponible para alquiler!");
-                System.out.println("**Amarre: " + i + " \n");
+                System.out.println("El amarre " +  i + " no est� disponible para alquiler!");
+                System.out.println("Amarre: " + i + " \n");
                 System.out.println(alquileres[i].toString());
 
             }
